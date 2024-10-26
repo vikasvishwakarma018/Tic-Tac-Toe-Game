@@ -1,12 +1,16 @@
+
 *{
     margin: 0;
     padding: 0;
+    justify-content: center;
+   align-items: center;
 }
 body{
     background-color: #548687;
     text-align: center;
-    justify-content: center;
-
+    justify-content: center; 
+   background-image: url(https://static.vecteezy.com/system/resources/thumbnails/000/265/598/small_2x/eezy_62-01.png);    
+       
 }
 h1{
     color: rgb(24, 24, 24);
@@ -23,6 +27,8 @@ h1:hover{
 }
 .container{
     height: 70vh;
+    justify-content: center;
+align-items: center;
 
 }
 .game{
@@ -32,42 +38,108 @@ h1:hover{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 1.5vmin;
+    gap: 30px;
     padding: 40px;
     margin: 1px;
     gap: 12px;
    padding-left: 410px;
+   
+   
+   
 }
 .box{
     height: 18vmin;
     width: 18vmin;
     border-radius: 1rem;
     border: none;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
     font-size: 8vmin;
-    color: #b0413e;
-    background-color: #ffffcf;
-}
-.game:hover{
-    box-shadow: 0 ,0,2rem rgba(228, 10, 10, 0.1);
-
-}
-#rest-btn{
     color: black;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  background-color:#191913;
-  background-color: #fff;
-  border-radius: 1rem;
-  border: none;
-  cursor: pointer;
-
-  
+    background-color:#ff8ec1;
 }
+.box:hover{
+    box-sizing: 100px;
+    border: 2px solid black;
+    box-shadow: 0 0 1rem rgba(1, 0, 0, 0.5);
+    filter:drop-shadow(1px 1px 2px black);
+  cursor: pointer;
+}
+/* From Uiverse.io by satyamchaudharydev */ 
+.button {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    padding-block: 0.5rem;
+    padding-inline: 1.25rem;
+    background-color: rgb(0 107 179);
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+    gap: 10px;
+    font-weight: bold;
+    border: 3px solid #ffffff4d;
+    outline: none;
+    overflow: hidden;
+    font-size: 15px;
+    cursor: pointer;
+    left: 490px;
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .button:hover {
+    transform: scale(1.05);
+    border-color: #fff9;
+  }
+  
+  .button:hover .icon {
+    transform: translate(4px);
+  }
+  
+  .button:hover::before {
+    animation: shine 1.5s ease-out infinite;
+  }
+  
+  .button::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0) 30%,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0) 70%
+    );
+    top: 0;
+    left: -100px;
+    opacity: 0.6;
+  }
+  
+  @keyframes shine {
+    0% {
+      left: -100px;
+    }
+  
+    60% {
+      left: 100%;
+    }
+  
+    to {
+      left: 100%;
+    }
+}
+  
 #msg{
-    color: #ffffc7;
-    font-size: 5vmin;
+    color: #f7edff;
+    font-size: 50px;
+    margin: 38px;
+    margin-top: 39px;
 }
 .msg-container{
     height: 100vmin;
@@ -80,10 +152,50 @@ h1:hover{
 .hide{
     display: none;
 }
-#new-btn{
-    height: 67px;
-    width: 117px;
-    /* padding: 31px; */
-    margin: 14px;
-    border-radius: 16px;
-}
+/* From Uiverse.io by cssbuttons-io */
+button #new-btn{
+    align-items: center;
+    background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #ffffff;
+    display: flex;
+    font-size: 18px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 3px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  button #new-btn:active,
+  button #new-btn:hover {
+    outline: 0;
+  }
+  
+  button #new-btn span {
+    background-color: rgb(5, 6, 45);
+    padding: 16px 24px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+  }
+  
+  button #new-btn:hover span {
+    background: none;
+  }
+  
+  button #new-btn:active {
+    transform: scale(0.9);
+  }
+  
